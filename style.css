@@ -73,9 +73,7 @@ img {
 }
 
 @media all and (max-width: 420px) {
-  #lezioni h1 {
-    font-size: 2.5rem;
-  }
+  /* Regola generale */
 
   * {
     margin: 0;
@@ -83,25 +81,84 @@ img {
     box-sizing: border-box;
   }
 
+  /*#region ID del primo cont */
+
+  .row h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  .row > img {
+    width: 50%;
+    object-fit: contain;
+    padding-top: 25px;
+  }
+
   #lezioni .row > .left,
   #lezioni .row > .right {
     width: 100%;
+    height: 50%;
   }
 
   #lezioni .row {
     margin-top: 0px;
-    background-color: rgb(224, 211, 138);
+    background-color: rgba(242, 242, 205, 1);
+    padding: 1rem 0px 1rem 0px;
   }
+
+  #steps .row {
+    margin-top: 0px;
+    padding: 1rem 0px 1rem 0px;
+  }
+
+  #why .row {
+    margin-top: 0px;
+    background-color: rgba(242, 242, 205, 1);
+    padding: 1rem 0px 1rem 0px;
+  }
+
+  #why hr {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /*#endregion  */
+
+  /*#region container */
 
   .container {
     width: 100%;
     float: left;
     position: relative;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .row {
     width: 100%;
   }
+
+  #step .row {
+    margin-top: 0px;
+  }
+
+  /*#endregion  */
 }
