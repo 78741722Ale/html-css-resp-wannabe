@@ -28,7 +28,7 @@
 #steps .row > .central,
 #steps .row > .right {
   float: left;
-  width: 33%;
+  width: 100%;
 }
 
 #steps {
@@ -102,7 +102,7 @@ img {
   #lezioni .row > .left,
   #lezioni .row > .right {
     width: 100%;
-    height: 50%;
+    margin-bottom: 0px 0px 20px 0px;
   }
 
   #lezioni .row {
@@ -123,9 +123,9 @@ img {
   }
 
   #why hr {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
-    border: 1px solid black;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
   }
 
   #steps .row > .left,
@@ -139,7 +139,7 @@ img {
   #why .row > .second,
   #why .row > .third {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   /*#endregion  */
